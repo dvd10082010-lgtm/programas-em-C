@@ -46,8 +46,18 @@ int *insert_values(int n, ...) {
     }
 }
 
-int main()  {
+void print_array(int *arr, int size) {
+    printf("array values: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
 
+int main()  {
+    int *arr = insert_values(5, 1, 2, 3, 4, 5);
+    print_array(arr, 5);
+    free(arr);
     return 0;
 }
 
