@@ -1,0 +1,9 @@
+.# 1. Ignora absolutamente TUDO no projeto
+*
+
+# 2. Abre exceção para o próprio arquivo .gitignore (recomendado)
+!.gitignore
+
+# 3. Abre exceção para a pasta de memória e tudo dentro dela
+!memory studies/
+!memory studies/**
