@@ -13,7 +13,7 @@ int *insert_values(int n, ...) {
     dyarr arr ;
     arr.size = 0;
     arr.intem = NULL;
-    arr.capacity = 10;
+    arr.capacity = 4;
 
 
     // printf("insert the array's initial value\n");
@@ -49,14 +49,14 @@ int *insert_values(int n, ...) {
 void print_array(int *arr, int size) {
     printf("array values: ");
     for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
+        printf("%d\n ", arr[i]);
     }
     printf("\n");
 }
 
 int main()  {
-    int *arr = insert_values(5, 1, 2, 3, 4, 5);
-    print_array(arr, 5);
+    int *arr = insert_values(15, 26, 760, 282, 251, 229, 143, 755, 105, 693, 759, 914, 559, 90, 605, 433);
+    print_array(arr, 15);
     free(arr);
     return 0;
 }
